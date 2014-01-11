@@ -7,30 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "GuideViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) UILabel *label;
+@property (strong, nonatomic) GuideViewController *scrollController;
 @end
 
 @implementation ViewController
 
 - (void)loadView{
     [super loadView];
-    
-    UIView *view=[[UIView alloc]initWithFrame:[UIScreen mainScreen].applicationFrame];
-    
-    view.alpha=0.5;
-    view.backgroundColor=[UIColor cyanColor];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+
+    UIView *view=[[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    view.backgroundColor=[UIColor greenColor];
     self.view = view;
     
-    self.label = [[UITextView alloc] initWithFrame:CGRectMake(10, 50, 300, 200)];
+    self.label = [[UITextView alloc] initWithFrame:CGRectMake(0, 230, self.view.frame.size.width, 200)];
     [self.view addSubview:self.label];
-    self.label.text = @"receving message.....";
+    
+    _scrollController = [[GuideViewController alloc] init];
+    [self.view addSubview:_scrollController.view];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
 	// Do any additional setup after loading the view, typically from a nib.
     if ([[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"]) {
         // 這裏判斷是否第一次

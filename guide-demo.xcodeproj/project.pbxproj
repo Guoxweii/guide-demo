@@ -22,6 +22,7 @@
 		BC512F851880FACB006DC3C1 /* guide_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC512F841880FACB006DC3C1 /* guide_demoTests.m */; };
 		BC512F98188104CB006DC3C1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC512F97188104CB006DC3C1 /* Icon.png */; };
 		BC512F9A1881057A006DC3C1 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC512F9918810579006DC3C1 /* icon@2x.png */; };
+		BC512F9D18811489006DC3C1 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC512F9C18811489006DC3C1 /* GuideViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		BC512F841880FACB006DC3C1 /* guide_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = guide_demoTests.m; sourceTree = "<group>"; };
 		BC512F97188104CB006DC3C1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = images/Icon.png; sourceTree = "<group>"; };
 		BC512F9918810579006DC3C1 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "images/icon@2x.png"; sourceTree = "<group>"; };
+		BC512F9B18811489006DC3C1 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
+		BC512F9C18811489006DC3C1 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				BC512F6F1880FACB006DC3C1 /* ViewController.m */,
+				BC512F9B18811489006DC3C1 /* GuideViewController.h */,
+				BC512F9C18811489006DC3C1 /* GuideViewController.m */,
 				BC512F6E1880FACB006DC3C1 /* ViewController.h */,
 			);
 			name = controllers;
@@ -303,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC512F701880FACB006DC3C1 /* ViewController.m in Sources */,
+				BC512F9D18811489006DC3C1 /* GuideViewController.m in Sources */,
 				BC512F671880FACB006DC3C1 /* AppDelegate.m in Sources */,
 				BC512F631880FACB006DC3C1 /* main.m in Sources */,
 			);
