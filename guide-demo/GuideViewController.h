@@ -6,6 +6,6 @@
 //  Copyright (c) 2014年 gxw. All rights reserved.
 //
 
-@interface GuideViewController : UIViewController
+@interface GuideViewController : UIViewController<UIScrollViewDelegate>
 
 @end
