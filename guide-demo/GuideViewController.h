@@ -7,5 +7,5 @@
 //
 
 @interface GuideViewController : UIViewController<UIScrollViewDelegate>
-
+@property (retain) id delegate;
 @end

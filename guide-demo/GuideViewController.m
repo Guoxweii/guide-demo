@@ -53,6 +53,19 @@
     UIView *contentView3 = [[UIView alloc] initWithFrame:CGRectMake(640, 0, self.view.frame.size.width, self.view.frame.size.height)];
     contentView3.backgroundColor = [UIColor blueColor];
     
+    UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+    //给定button在view上的位置
+    
+    button.frame = CGRectMake(240, 40, 35, 20);
+    [button setTitle:@"返回" forState: UIControlStateNormal];
+    
+    
+    //button背景色
+    button.backgroundColor = [UIColor orangeColor];
+    
+    [button addTarget:self action:@selector(removeGuideView) forControlEvents:UIControlEventTouchDown];
+    [contentView3 addSubview:button];
+    
     [self.view addSubview:contentView3];
     
     CGRect framePageControl = CGRectMake(50, 400, 250, 30);
@@ -94,4 +107,9 @@
     _pageControl.frame = CGRectMake(50 + 320*page, 430, _pageControl.frame.size.width, _pageControl.frame.size.height);
 }
 
+- (void)removeGuideView
+{
+    NSLog(@"123");
+    [self.view removeFromSuperview];
+}
 @end
