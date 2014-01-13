@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C2665E97-E93B-4E75-8F9A-012DEF21D5C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>guide-demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</key>
+		<string>ssh://github.com/littleluren/guide-demo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>guide-demo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/littleluren/guide-demo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>guide-demo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

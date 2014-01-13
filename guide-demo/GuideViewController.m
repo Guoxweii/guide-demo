@@ -8,6 +8,7 @@
 
 #import "GuideViewController.h"
 #import "AppDelegate.h"
+#import "Toast+UIView.h"
 
 @interface GuideViewController ()
 @property (strong, nonatomic) UIPageControl *pageControl;
@@ -20,9 +21,9 @@
     
     [super loadView];
     
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
+//    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationSlide];
     
-    UIScrollView *view = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+    UIScrollView *view = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     _scrollview = view;
     
     [view setUserInteractionEnabled:YES];
@@ -39,7 +40,7 @@
     
     self.view = view;
     
-    UIView *contentView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+    UIView *contentView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     contentView.backgroundColor = [UIColor redColor];
 
     [self.view addSubview:contentView];
@@ -68,6 +69,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self.view makeToast:@"This is a piece of toast with a title."
+                duration:3.0
+                position:@"center"
+                   title:@"Toast Title"];
 }
 
 - (void)didReceiveMemoryWarning
