@@ -26,12 +26,9 @@
     self.view = view;
     
     self.label = [[UITextView alloc] initWithFrame:CGRectMake(0, 130, self.view.frame.size.width-100, 50)];
-    [self.label setText:@"123123123"];
+    [self.label setText:@"the main view content"];
     
     [self.view addSubview:self.label];
-    
-    _scrollController = [[GuideViewController alloc] init];
-    [self.view addSubview:_scrollController.view];
 }
 
 - (void)viewDidLoad
@@ -45,14 +42,8 @@
         NSLog(@"step into here!");
         [[NSUserDefaults standardUserDefaults] setValue:APP_VERSION forKey:@"APP_VERSION"];
         
-            // 這裏判斷是否第一次
-        UIAlertView * alert =[[UIAlertView alloc] initWithTitle:@"第一次"
-                                                        message:@"進入App"
-                                                        delegate:self
-                                                cancelButtonTitle:@"我知道了"
-                                                otherButtonTitles:nil];
-        [alert show];
-        
+        _scrollController = [[GuideViewController alloc] init];
+        [self.view addSubview:_scrollController.view];
     }
 	// Do any additional setup after loading the view, typically from a nib.
     

@@ -56,12 +56,17 @@
     UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
     //给定button在view上的位置
     
-    button.frame = CGRectMake(240, 40, 35, 20);
+    button.frame = CGRectMake(110, 400, 100, 25);
     [button setTitle:@"返回" forState: UIControlStateNormal];
     
     
     //button背景色
-    button.backgroundColor = [UIColor orangeColor];
+    CALayer *layer = button.layer;
+    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    layer.cornerRadius = 4.0f;
+    layer.borderWidth = 0.5f;
+    
     
     [button addTarget:self action:@selector(removeGuideView) forControlEvents:UIControlEventTouchDown];
     [contentView3 addSubview:button];

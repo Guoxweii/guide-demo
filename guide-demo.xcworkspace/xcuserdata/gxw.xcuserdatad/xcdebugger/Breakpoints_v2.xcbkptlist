@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "guide-demo/ViewController.m"
-            timestampString = "411318234.802709"
+            timestampString = "411354818.768274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "-loadView"
             landmarkType = "5">
          </BreakpointContent>
