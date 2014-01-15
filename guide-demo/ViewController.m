@@ -9,10 +9,12 @@
 #import "ViewController.h"
 #import "GuideViewController.h"
 #import "AppDelegate.h"
+#import "BaseViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) UILabel *label;
 @property (strong, nonatomic) GuideViewController *scrollController;
+@property (strong, nonatomic) BaseViewController *baseController;
 @end
 
 @implementation ViewController
@@ -25,10 +27,8 @@
     view.backgroundColor=[UIColor whiteColor];
     self.view = view;
     
-    self.label = [[UITextView alloc] initWithFrame:CGRectMake(0, 130, self.view.frame.size.width-100, 50)];
-    [self.label setText:@"the main view content"];
-    
-    [self.view addSubview:self.label];
+    _baseController = [[BaseViewController alloc] init];
+    [self.view addSubview:_baseController.view];
 }
 
 - (void)viewDidLoad

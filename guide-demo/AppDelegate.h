@@ -7,7 +7,7 @@
 //
 
 #define PrintRect(frame) NSLog(@"X:%f,Y:%f,W:%f,H:%f",frame.origin.x,frame.origin.y,frame.size.width,frame.size.height)
-#define APP_VERSION (@"1.1")
+#define APP_VERSION (@"1.2")
 
 #import <UIKit/UIKit.h>
 
