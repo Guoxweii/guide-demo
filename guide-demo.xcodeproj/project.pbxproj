@@ -10,8 +10,6 @@
 		469BFB55447742E2815DED5C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62A023E02A4F31BB456794 /* libPods.a */; };
 		BC095CE9188617D700E062C7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC095CE8188617D700E062C7 /* BaseViewController.m */; };
 		BC095CEC1886198300E062C7 /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC095CEB1886198300E062C7 /* FirstTabViewController.m */; };
-		BC095CF718864A7200E062C7 /* nav_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = BC095CF518864A7200E062C7 /* nav_bar.png */; };
-		BC095CFC18864D6D00E062C7 /* nav_bar_ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = BC095CFB18864D6D00E062C7 /* nav_bar_ios7.png */; };
 		BC512F571880FACB006DC3C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC512F561880FACB006DC3C1 /* Foundation.framework */; };
 		BC512F591880FACB006DC3C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC512F581880FACB006DC3C1 /* CoreGraphics.framework */; };
 		BC512F5B1880FACB006DC3C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC512F5A1880FACB006DC3C1 /* UIKit.framework */; };
@@ -31,6 +29,9 @@
 		BC85C7C418867CF500218D9D /* criminal-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC85C7C318867CF500218D9D /* criminal-50.png */; };
 		BC85C7C818867DE200218D9D /* triller-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC85C7C718867DE200218D9D /* triller-50.png */; };
 		BC85C7CA18867E1700218D9D /* triller-32.png in Resources */ = {isa = PBXBuildFile; fileRef = BC85C7C918867E1700218D9D /* triller-32.png */; };
+		BCA156FB18882E640083244B /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCA156FA18882E640083244B /* test.jpg */; };
+		BCA156FD1888359E0083244B /* nav_bar_ios7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCA156FC1888359E0083244B /* nav_bar_ios7.jpg */; };
+		BCA156FF188836F80083244B /* nav_bar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BCA156FE188836F80083244B /* nav_bar.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +51,6 @@
 		BC095CE8188617D700E062C7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		BC095CEA1886198300E062C7 /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabViewController.h; sourceTree = "<group>"; };
 		BC095CEB1886198300E062C7 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
-		BC095CF518864A7200E062C7 /* nav_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_bar.png; path = images/nav_bar.png; sourceTree = "<group>"; };
-		BC095CFB18864D6D00E062C7 /* nav_bar_ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = nav_bar_ios7.png; path = images/nav_bar_ios7.png; sourceTree = "<group>"; };
 		BC512F531880FACB006DC3C1 /* guide-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "guide-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC512F561880FACB006DC3C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC512F581880FACB006DC3C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +76,9 @@
 		BC85C7C318867CF500218D9D /* criminal-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "criminal-50.png"; path = "images/criminal-50.png"; sourceTree = "<group>"; };
 		BC85C7C718867DE200218D9D /* triller-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "triller-50.png"; path = "images/triller-50.png"; sourceTree = "<group>"; };
 		BC85C7C918867E1700218D9D /* triller-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "triller-32.png"; path = "images/triller-32.png"; sourceTree = "<group>"; };
+		BCA156FA18882E640083244B /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpg; path = ../../../../../Downloads/test.jpg; sourceTree = "<group>"; };
+		BCA156FC1888359E0083244B /* nav_bar_ios7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nav_bar_ios7.jpg; path = images/nav_bar_ios7.jpg; sourceTree = "<group>"; };
+		BCA156FE188836F80083244B /* nav_bar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = nav_bar.jpg; path = images/nav_bar.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,11 +214,12 @@
 		BC512F921880FBF5006DC3C1 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				BCA156FE188836F80083244B /* nav_bar.jpg */,
+				BCA156FC1888359E0083244B /* nav_bar_ios7.jpg */,
+				BCA156FA18882E640083244B /* test.jpg */,
 				BC85C7C918867E1700218D9D /* triller-32.png */,
 				BC85C7C718867DE200218D9D /* triller-50.png */,
 				BC85C7C318867CF500218D9D /* criminal-50.png */,
-				BC095CFB18864D6D00E062C7 /* nav_bar_ios7.png */,
-				BC095CF518864A7200E062C7 /* nav_bar.png */,
 				BC512F9918810579006DC3C1 /* icon@2x.png */,
 				BC512F97188104CB006DC3C1 /* Icon.png */,
 			);
@@ -303,14 +306,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC85C7CA18867E1700218D9D /* triller-32.png in Resources */,
+				BCA156FB18882E640083244B /* test.jpg in Resources */,
 				BC512F98188104CB006DC3C1 /* Icon.png in Resources */,
 				BC85C7C818867DE200218D9D /* triller-50.png in Resources */,
 				BC512F9A1881057A006DC3C1 /* icon@2x.png in Resources */,
 				BC512F721880FACB006DC3C1 /* Images.xcassets in Resources */,
 				BC512F611880FACB006DC3C1 /* InfoPlist.strings in Resources */,
+				BCA156FF188836F80083244B /* nav_bar.jpg in Resources */,
+				BCA156FD1888359E0083244B /* nav_bar_ios7.jpg in Resources */,
 				BC85C7C418867CF500218D9D /* criminal-50.png in Resources */,
-				BC095CFC18864D6D00E062C7 /* nav_bar_ios7.png in Resources */,
-				BC095CF718864A7200E062C7 /* nav_bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

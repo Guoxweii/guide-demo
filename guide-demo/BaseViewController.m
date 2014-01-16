@@ -33,13 +33,12 @@
         
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: controller];
         
+        
         [controllers addObject:nav];
     }
     
     //创建UITabBarController，将显示的内容添加进去
     self.viewControllers = controllers;
-
-    
 }
 
 - (void)viewDidLoad

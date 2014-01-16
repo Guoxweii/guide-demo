@@ -27,8 +27,16 @@
     
     [self.window makeKeyAndVisible];
     
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bar_ios7.png"] forBarMetrics:UIBarMetricsDefault];
-
+    if ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0f) {
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bar_ios7.jpg"] forBarMetrics:UIBarMetricsDefault];
+        [[UITabBar appearance] setBarTintColor:[UIColor blackColor]];
+    } else {
+        [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"nav_bar.jpg"] forBarMetrics:UIBarMetricsDefault];
+//        [[UINavigationBar appearance] setTintColor:[UIColor greenColor]];
+        [[UIApplication sharedApplication]setStatusBarStyle:UIStatusBarStyleLightContent];
+        [[UITabBar appearance] setTintColor:[UIColor blackColor]];
+    }
+    
     
     return YES;
 }
