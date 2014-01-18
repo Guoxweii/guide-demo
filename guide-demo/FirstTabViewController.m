@@ -7,9 +7,12 @@
 //
 
 #import "FirstTabViewController.h"
+#import "webViewController.h"
 
 @interface FirstTabViewController ()
+@property (nonatomic,retain) webViewController *webController;
 
+- (void)redirect;
 @end
 
 @implementation FirstTabViewController
@@ -30,12 +33,35 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+    //给定button在view上的位置
+    
+    button.frame = CGRectMake(110, 200, 100, 25);
+    [button setTitle:@"百度" forState: UIControlStateNormal];
+    
+    
+    //button背景色
+    CALayer *layer = button.layer;
+    layer.backgroundColor = [[UIColor clearColor] CGColor];
+    layer.borderColor = [[UIColor darkGrayColor] CGColor];
+    layer.cornerRadius = 4.0f;
+    layer.borderWidth = 0.5f;
+    
+    
+    [button addTarget:self action:@selector(redirect) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:button];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)redirect
+{
+    _webController = [[webViewController alloc] init];
+    [self.navigationController pushViewController:_webController animated:YES];
 }
 
 @end

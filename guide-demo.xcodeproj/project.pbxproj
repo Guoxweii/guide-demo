@@ -26,6 +26,7 @@
 		BC512F98188104CB006DC3C1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BC512F97188104CB006DC3C1 /* Icon.png */; };
 		BC512F9A1881057A006DC3C1 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC512F9918810579006DC3C1 /* icon@2x.png */; };
 		BC512F9D18811489006DC3C1 /* GuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC512F9C18811489006DC3C1 /* GuideViewController.m */; };
+		BC7AEA54188AD31700CE6291 /* webViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7AEA53188AD31700CE6291 /* webViewController.m */; };
 		BC85C7C418867CF500218D9D /* criminal-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC85C7C318867CF500218D9D /* criminal-50.png */; };
 		BC85C7C818867DE200218D9D /* triller-50.png in Resources */ = {isa = PBXBuildFile; fileRef = BC85C7C718867DE200218D9D /* triller-50.png */; };
 		BC85C7CA18867E1700218D9D /* triller-32.png in Resources */ = {isa = PBXBuildFile; fileRef = BC85C7C918867E1700218D9D /* triller-32.png */; };
@@ -73,6 +74,8 @@
 		BC512F9918810579006DC3C1 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon@2x.png"; path = "images/icon@2x.png"; sourceTree = "<group>"; };
 		BC512F9B18811489006DC3C1 /* GuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideViewController.h; sourceTree = "<group>"; };
 		BC512F9C18811489006DC3C1 /* GuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideViewController.m; sourceTree = "<group>"; };
+		BC7AEA52188AD31700CE6291 /* webViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = webViewController.h; sourceTree = "<group>"; };
+		BC7AEA53188AD31700CE6291 /* webViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = webViewController.m; sourceTree = "<group>"; };
 		BC85C7C318867CF500218D9D /* criminal-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "criminal-50.png"; path = "images/criminal-50.png"; sourceTree = "<group>"; };
 		BC85C7C718867DE200218D9D /* triller-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "triller-50.png"; path = "images/triller-50.png"; sourceTree = "<group>"; };
 		BC85C7C918867E1700218D9D /* triller-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "triller-32.png"; path = "images/triller-32.png"; sourceTree = "<group>"; };
@@ -193,6 +196,8 @@
 				BC512F6E1880FACB006DC3C1 /* ViewController.h */,
 				BC095CE7188617D700E062C7 /* BaseViewController.h */,
 				BC095CE8188617D700E062C7 /* BaseViewController.m */,
+				BC7AEA52188AD31700CE6291 /* webViewController.h */,
+				BC7AEA53188AD31700CE6291 /* webViewController.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -380,6 +385,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC512F701880FACB006DC3C1 /* ViewController.m in Sources */,
+				BC7AEA54188AD31700CE6291 /* webViewController.m in Sources */,
 				BC095CE9188617D700E062C7 /* BaseViewController.m in Sources */,
 				BC512F9D18811489006DC3C1 /* GuideViewController.m in Sources */,
 				BC512F671880FACB006DC3C1 /* AppDelegate.m in Sources */,

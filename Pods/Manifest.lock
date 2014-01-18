@@ -18,16 +18,19 @@ PODS:
   - AFNetworking/UIKit (2.1.0):
     - AFNetworking/NSURLConnection
   - JSONKit (1.5pre)
+  - MBProgressHUD (0.8)
   - Toast (2.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - JSONKit (~> 1.5pre)
+  - MBProgressHUD (~> 0.8)
   - Toast (~> 2.2)
 
 SPEC CHECKSUMS:
   AFNetworking: c7d7901a83f631414c7eda1737261f696101a5cd
   JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
   Toast: 4123a86be86b619e118a134510ff6d00d9bd47e0
 
 COCOAPODS: 0.28.0
