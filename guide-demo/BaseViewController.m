@@ -8,9 +8,11 @@
 
 #import "BaseViewController.h"
 #import "FirstTabViewController.h"
+#import "AFNetworking.h"
+#import "Toast+UIView.h"
 
 @interface BaseViewController ()
-
+@property (nonatomic, retain) AFHTTPRequestOperationManager *manager;
 @end
 
 @implementation BaseViewController
@@ -45,6 +47,23 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    _manager = [AFHTTPRequestOperationManager manager];
+    _manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    [_manager GET:@"http://211.167.101.143/api/v2/live/channels.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        NSLog(@"%@", responseObject);
+        [self.view makeToast:@"http api request success."
+                    duration:3.0
+                    position:@"center"
+                       title:@"Toast Title"];
+    } failure:^(AFHTTPRequestOperation *operation,  NSError *error) {
+        NSLog(@"%@", error);
+        [self.view makeToast:@"http api request failed."
+                    duration:3.0
+                    position:@"center"
+                       title:@"Toast Title"];
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning

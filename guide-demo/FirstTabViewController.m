@@ -19,6 +19,11 @@
     [super loadView];
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.navigationItem.title = @"my view";
+    
+    UIViewController *other_view = [[UIViewController alloc] init];
+    other_view.title = @"gxw test";
+    
+    [self.navigationController pushViewController:other_view animated:YES];
 }
 
 - (void)viewDidLoad

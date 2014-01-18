@@ -12,6 +12,8 @@
 	<dict>
 		<key>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</key>
 		<string>ssh://github.com/littleluren/guide-demo.git</string>
+		<key>874B4EF4-5247-4BBB-AA08-3C2A7DA33506</key>
+		<string>git://git.linphone.org/linphone-iphone.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>guide-demo.xcworkspace</string>
@@ -19,6 +21,8 @@
 	<dict>
 		<key>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</key>
 		<string>..</string>
+		<key>874B4EF4-5247-4BBB-AA08-3C2A7DA33506</key>
+		<string>../../liphone/linphone-iphone</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>ssh://github.com/littleluren/guide-demo.git</string>
@@ -35,6 +39,14 @@
 			<string>6A72C3A6-D12C-41AD-B87C-4CD3506A443F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>guide-demo</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>874B4EF4-5247-4BBB-AA08-3C2A7DA33506</string>
+			<key>IDESourceControlWCCName</key>
+			<string>linphone-iphone</string>
 		</dict>
 	</array>
 </dict>
