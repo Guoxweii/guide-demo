@@ -8,6 +8,7 @@
 
 #import "FirstTabViewController.h"
 #import "webViewController.h"
+#import "UIViewController+KNSemiModal.h"
 
 @interface FirstTabViewController ()
 @property (nonatomic,retain) webViewController *webController;
@@ -36,7 +37,7 @@
     UIButton *button = [UIButton buttonWithType: UIButtonTypeRoundedRect];
     //给定button在view上的位置
     
-    button.frame = CGRectMake(110, 200, 100, 25);
+    button.frame = CGRectMake(30, 200, 100, 25);
     [button setTitle:@"百度" forState: UIControlStateNormal];
     
     
@@ -50,6 +51,23 @@
     
     [button addTarget:self action:@selector(redirect) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:button];
+    
+    
+    UIButton *button_exta = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+    
+    button_exta.frame = CGRectMake(180, 200, 100, 25);
+    [button_exta setTitle:@"toolbar" forState: UIControlStateNormal];
+    
+    //button背景色
+    CALayer *layer_exta = button_exta.layer;
+    layer_exta.backgroundColor = [[UIColor clearColor] CGColor];
+    layer_exta.borderColor = [[UIColor darkGrayColor] CGColor];
+    layer_exta.cornerRadius = 4.0f;
+    layer_exta.borderWidth = 0.5f;
+    
+    
+    [button_exta addTarget:self action:@selector(showToolbars) forControlEvents:UIControlEventTouchDown];
+    [self.view addSubview:button_exta];
 }
 
 - (void)didReceiveMemoryWarning
@@ -62,6 +80,16 @@
 {
     _webController = [[webViewController alloc] init];
     [self.navigationController pushViewController:_webController animated:YES];
+}
+
+- (void)showToolbars
+{
+    NSLog(@"123");
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 250)];
+    view.backgroundColor = [UIColor redColor];
+    
+    [self presentSemiView:view];
 }
 
 @end

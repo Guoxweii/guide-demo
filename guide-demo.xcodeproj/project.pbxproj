@@ -10,6 +10,7 @@
 		469BFB55447742E2815DED5C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD62A023E02A4F31BB456794 /* libPods.a */; };
 		BC095CE9188617D700E062C7 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC095CE8188617D700E062C7 /* BaseViewController.m */; };
 		BC095CEC1886198300E062C7 /* FirstTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC095CEB1886198300E062C7 /* FirstTabViewController.m */; };
+		BC42D9E5188E2E4E00D8F24D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC42D9E4188E2E4E00D8F24D /* QuartzCore.framework */; };
 		BC512F571880FACB006DC3C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC512F561880FACB006DC3C1 /* Foundation.framework */; };
 		BC512F591880FACB006DC3C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC512F581880FACB006DC3C1 /* CoreGraphics.framework */; };
 		BC512F5B1880FACB006DC3C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC512F5A1880FACB006DC3C1 /* UIKit.framework */; };
@@ -52,6 +53,7 @@
 		BC095CE8188617D700E062C7 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		BC095CEA1886198300E062C7 /* FirstTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTabViewController.h; sourceTree = "<group>"; };
 		BC095CEB1886198300E062C7 /* FirstTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTabViewController.m; sourceTree = "<group>"; };
+		BC42D9E4188E2E4E00D8F24D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BC512F531880FACB006DC3C1 /* guide-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "guide-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC512F561880FACB006DC3C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC512F581880FACB006DC3C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC42D9E5188E2E4E00D8F24D /* QuartzCore.framework in Frameworks */,
 				BC512F591880FACB006DC3C1 /* CoreGraphics.framework in Frameworks */,
 				BC512F5B1880FACB006DC3C1 /* UIKit.framework in Frameworks */,
 				BC512F571880FACB006DC3C1 /* Foundation.framework in Frameworks */,
@@ -132,6 +135,7 @@
 		BC512F551880FACB006DC3C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC42D9E4188E2E4E00D8F24D /* QuartzCore.framework */,
 				BC512F561880FACB006DC3C1 /* Foundation.framework */,
 				BC512F581880FACB006DC3C1 /* CoreGraphics.framework */,
 				BC512F5A1880FACB006DC3C1 /* UIKit.framework */,

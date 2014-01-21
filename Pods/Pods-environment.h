@@ -55,6 +55,12 @@
 // Please contact the author.
 // Version: 1.5pre.
 
+// KNSemiModalViewController
+#define COCOAPODS_POD_AVAILABLE_KNSemiModalViewController
+#define COCOAPODS_VERSION_MAJOR_KNSemiModalViewController 0
+#define COCOAPODS_VERSION_MINOR_KNSemiModalViewController 3
+#define COCOAPODS_VERSION_PATCH_KNSemiModalViewController 0
+
 // MBProgressHUD
 #define COCOAPODS_POD_AVAILABLE_MBProgressHUD
 #define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
